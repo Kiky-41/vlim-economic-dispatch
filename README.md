@@ -5,6 +5,7 @@ High-performance Python implementation of the Vectorized Lambda Iteration Method
 This project demonstrates how vectorized numerical computation can significantly accelerate classical optimization methods for generator scheduling.
 
 📄 Related publication
+
 Ikhsan et al. (2024),
 Vectorized Lambda Iteration Method for Swift Economic Dispatch Analysis
 https://doi.org/10.5109/7172306
@@ -12,6 +13,7 @@ https://doi.org/10.5109/7172306
 ⸻
 
 🚀 Features
+
 	•	⚡ Fast computation using vectorization (NumPy)
 	•	📉 Up to ~99% reduction in computation time
 	•	⚙️ Supports key constraints:
@@ -30,6 +32,7 @@ The Economic Dispatch (ED) problem aims to minimize total generation cost:
 F_T = \sum_{i=1}^{n} (a_i + b_i P_i + c_i P_i^2)
 
 The classical Lambda Iteration Method is enhanced through:
+
 	•	Vectorized operations using NumPy
 	•	Parallel computation across generators
 	•	Reduced iteration time and faster convergence
@@ -46,6 +49,7 @@ ELIM	32,542	0.123
 LIM	32,549	2.556
 
 ✅ VLIM achieves:
+
 	•	Faster convergence
 	•	Lower operational cost
 	•	Significant computational efficiency
