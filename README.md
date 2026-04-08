@@ -175,26 +175,3 @@ If you find this repository useful:
 	•	🍴 Fork and contribute
 	•	📢 Share with the research community
 :::
-
-⸻
-
-🔥 Perubahan penting yang saya lakukan
-	•	❌ Hapus garis ⸻ → tidak perlu di Markdown
-	•	✅ Rapikan bullet (nested list benar)
-	•	✅ Tabel jadi proper
-	•	✅ Code block untuk:
-	•	project structure
-	•	install
-	•	usage
-	•	✅ Spacing antar section rapi
-	•	✅ Heading konsisten
-
-⸻
-
-🎯 Sekarang repo kamu terlihat
-	•	Clean engineering project ✅
-	•	Research-grade ✅
-	•	Layak untuk CV / HR ✅
-	•	Layak untuk reviewer akademik ✅
-
-⸻
