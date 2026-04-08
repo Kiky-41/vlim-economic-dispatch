@@ -1,14 +1,15 @@
-# vlim-economic-dispatch
-High-performance implementation of the Vectorized Lambda Iteration Method (VLIM) for solving economic dispatch problems in power systems using NumPy
+:::writing{variant=“standard” id=“84721”}
 
 ⚡ Vectorized Lambda Iteration Method (VLIM) for Economic Dispatch
 
-A Python implementation of the **Vectorized Lambda Iteration Method (VLIM)** for solving the Economic Dispatch problem in power systems.
+High-performance Python implementation of the Vectorized Lambda Iteration Method (VLIM) for solving the Economic Dispatch (ED) problem in power systems.
 
 This project demonstrates how vectorized numerical computation can significantly accelerate classical optimization methods for generator scheduling.
 
-📄 Related publication:  
-Ikhsan et al. (2024), [Vectorized Lambda Iteration Method for Swift Economic Dispatch Analysis](https://doi.org/10.5109/7172306)
+📄 Related publication
+Ikhsan et al. (2024),
+Vectorized Lambda Iteration Method for Swift Economic Dispatch Analysis
+https://doi.org/10.5109/7172306
 
 ⸻
 
@@ -57,21 +58,21 @@ LIM	32,549	2.556
 
 vlim-economic-dispatch/
 │
-├── src/            # Core implementation
-├── notebooks/      # Jupyter experiments
-├── data/           # (Not included)
-├── docs/           # Paper / documentation
-├── requirements.txt
-└── README.md
+├── src/                # Core implementation
+├── README.md           # Documentation
+├── LICENSE
+└── .gitignore
 
 
 ⸻
 
-⚙️ Installation
+⚙️ Requirements
+	•	Python 3.9+
+	•	NumPy
 
-git clone https://github.com/username/vlim-economic-dispatch.git
-cd vlim-economic-dispatch
-pip install -r requirements.txt
+Install dependency:
+
+pip install numpy
 
 
 ⸻
@@ -82,10 +83,6 @@ Run main script:
 
 python src/main.py
 
-Or open notebook:
-
-jupyter notebook notebooks/VLIM.ipynb
-
 
 ⸻
 
@@ -93,13 +90,11 @@ jupyter notebook notebooks/VLIM.ipynb
 
 ⚠️ The dataset used in the original research is not publicly available due to confidentiality restrictions.
 
-However, you can:
+You can:
 	•	Use your own dataset with the same format
 	•	Generate synthetic data for testing
 
 Expected Input Format
-
-Each generator should include:
 
 Parameter	Description
 a, b, c	Cost coefficients
@@ -148,7 +143,8 @@ If you use this work, please cite:
   title={Vectorized Lambda Iteration Method for Swift Economic Dispatch Analysis},
   author={Ikhsan, Rifki Rahman Nur and Raharjo, Jangkung and Rahmat, Basuki},
   journal={Evergreen Journal},
-  year={2024}
+  year={2024},
+  doi={10.5109/7172306}
 }
 
 
@@ -169,7 +165,6 @@ MIT License
 🙌 Acknowledgements
 
 This work is based on research in power system optimization and economic dispatch.
-Special thanks to contributors and supporting institutions.
 
 ⸻
 
@@ -179,8 +174,4 @@ If you find this repository useful:
 	•	⭐ Star this repo
 	•	🍴 Fork and contribute
 	•	📢 Share with the research community
-
-⸻
-
 :::
-
