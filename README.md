@@ -1,10 +1,3 @@
-Mantap 👍 isinya sudah bagus—tinggal masalah format Markdown saja.
-Saya sudah rapikan total jadi versi GitHub-ready, clean, dan profesional (tinggal copas 👇)
-
-⸻
-
-:::writing{variant=“standard” id=“59382”}
-
 ⚡ Vectorized Lambda Iteration Method (VLIM) for Economic Dispatch
 
 High-performance Python implementation of the Vectorized Lambda Iteration Method (VLIM) for solving the Economic Dispatch (ED) problem in power systems.
