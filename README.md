@@ -1,9 +1,3 @@
-Berikut versi Markdown yang sudah benar-benar rapi dan valid (fix semua masalah: code block, separator, bullet, dll).
-👉 Tinggal copy–paste langsung ke README.md
-
-⸻
-
-
 # ⚡ Vectorized Lambda Iteration Method (VLIM) for Economic Dispatch
 
 High-performance Python implementation of the **Vectorized Lambda Iteration Method (VLIM)** for solving the Economic Dispatch (ED) problem in power systems.
@@ -14,8 +8,8 @@ This project demonstrates how vectorized numerical computation can significantly
 
 ## 📄 Related Publication
 
-Ikhsan et al. (2024)  
-*Vectorized Lambda Iteration Method for Swift Economic Dispatch Analysis*  
+Ikhsan et al. (2024)
+*Vectorized Lambda Iteration Method for Swift Economic Dispatch Analysis*
 https://doi.org/10.5109/7172306
 
 ---
@@ -25,9 +19,9 @@ https://doi.org/10.5109/7172306
 - ⚡ Fast computation using **vectorization (NumPy)**
 - 📉 Up to **~99% reduction in computation time**
 - ⚙️ Supports key constraints:
-  - Power balance constraint  
-  - Generation limits  
-  - Ramp rate constraint  
+  - Power balance constraint
+  - Generation limits
+  - Ramp rate constraint
 - 🔁 Suitable for **real-time optimization & energy market applications**
 - 🧠 Clean and modular Python implementation
 
@@ -37,15 +31,13 @@ https://doi.org/10.5109/7172306
 
 The Economic Dispatch (ED) problem aims to minimize total generation cost:
 
-\[
-F_T = \sum_{i=1}^{n} (a_i + b_i P_i + c_i P_i^2)
-\]
+$$F_T = \sum_{i=1}^{n} (a_i + b_i P_i + c_i P_i^2)$$
 
 The classical Lambda Iteration Method is enhanced through:
 
-- Vectorized operations using NumPy  
-- Parallel computation across generators  
-- Reduced iteration time and faster convergence  
+- Vectorized operations using NumPy
+- Parallel computation across generators
+- Reduced iteration time and faster convergence
 
 This approach significantly improves efficiency while maintaining solution accuracy.
 
@@ -60,9 +52,9 @@ This approach significantly improves efficiency while maintaining solution accur
 | LIM    | 32,549    | 2.556      |
 
 **VLIM achieves:**
-- Faster convergence  
-- Lower operational cost  
-- Significant computational efficiency  
+- Faster convergence
+- Lower operational cost
+- Significant computational efficiency
 
 ---
 
@@ -74,58 +66,64 @@ vlim-economic-dispatch/
 ├── README.md           # Documentation
 ├── LICENSE
 └── .gitignore
+```
 
+---
 
-⸻
+## ⚙️ Requirements
 
-⚙️ Requirements
-	•	Python 3.9+
-	•	NumPy
+- Python 3.9+
+- NumPy
 
 Install dependency:
 
+```bash
 pip install numpy
+```
 
+---
 
-⸻
-
-▶️ Usage
+## ▶️ Usage
 
 Run main script:
 
+```bash
 python src/main.py
+```
 
+---
 
-⸻
+## 📊 Dataset
 
-📊 Dataset
-
-⚠️ The dataset used in the original research is not publicly available due to confidentiality restrictions.
+> ⚠️ The dataset used in the original research is not publicly available due to confidentiality restrictions.
 
 You can:
-	•	Use your own dataset with the same format
-	•	Generate synthetic data for testing
+- Use your own dataset with the same format
+- Generate synthetic data for testing
 
-Expected Input Format
+**Expected Input Format**
 
-Parameter	Description
-a, b, c	Cost coefficients
-Pmin	Minimum power output
-Pmax	Maximum power output
-RampUp	Ramp up limit
-RampDown	Ramp down limit
+| Parameter | Description |
+|-----------|-------------|
+| a, b, c   | Cost coefficients |
+| Pmin      | Minimum power output |
+| Pmax      | Maximum power output |
+| RampUp    | Ramp up limit |
+| RampDown  | Ramp down limit |
 
-Example (CSV):
+**Example (CSV)**
 
+```csv
 a,b,c,Pmin,Pmax,RampUp,RampDown
 671.03,10.1,0.000299,150,455,50,50
 574.54,10.22,0.000183,150,455,50,50
+```
 
+---
 
-⸻
+## ▶️ Example (Synthetic Data)
 
-▶️ Example (Synthetic Data)
-
+```python
 from src.vlim import calculate_power
 
 demand = 2650
@@ -136,21 +134,22 @@ c = [0.000299, 0.000183]
 
 P = calculate_power(demand, a, b, c)
 print(P)
+```
 
+---
 
-⸻
-
-📌 Reproducibility
+## 📌 Reproducibility
 
 This repository focuses on the algorithm implementation.
 Exact reproduction of published results requires proprietary datasets.
 
-⸻
+---
 
-📖 Citation
+## 📖 Citation
 
 If you use this work, please cite:
 
+```bibtex
 @article{ikhsan2024vlim,
   title={Vectorized Lambda Iteration Method for Swift Economic Dispatch Analysis},
   author={Ikhsan, Rifki Rahman Nur and Raharjo, Jangkung and Rahmat, Basuki},
@@ -158,43 +157,31 @@ If you use this work, please cite:
   year={2024},
   doi={10.5109/7172306}
 }
+```
 
+---
 
-⸻
-
-🔗 DOI (Zenodo)
+## 🔗 DOI (Zenodo)
 
 After creating a GitHub release, Zenodo will automatically generate a DOI for this repository.
 
-⸻
+---
 
-📜 License
+## 📜 License
 
 MIT License
 
-⸻
+---
 
-🙌 Acknowledgements
+## 🙌 Acknowledgements
 
 This work is based on research in power system optimization and economic dispatch.
 
-⸻
+---
 
-⭐ Support
+## ⭐ Support
 
 If you find this repository useful:
-	•	⭐ Star this repo
-	•	🍴 Fork and contribute
-	•	📢 Share with the research community
-
----
-
-# ✅ Yang sudah diperbaiki
-
-- Code block tidak bocor ❗
-- Tidak ada simbol aneh `⸻`
-- Bullet list rapi
-- Table valid
-- Semua bagian bisa render sempurna di GitHub
-
----
+- ⭐ Star this repo
+- 🍴 Fork and contribute
+- 📢 Share with the research community
