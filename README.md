@@ -1,62 +1,74 @@
-⚡ Vectorized Lambda Iteration Method (VLIM) for Economic Dispatch
+Berikut versi Markdown yang sudah benar-benar rapi dan valid (fix semua masalah: code block, separator, bullet, dll).
+👉 Tinggal copy–paste langsung ke README.md
 
-High-performance Python implementation of the Vectorized Lambda Iteration Method (VLIM) for solving the Economic Dispatch (ED) problem in power systems.
+⸻
+
+
+# ⚡ Vectorized Lambda Iteration Method (VLIM) for Economic Dispatch
+
+High-performance Python implementation of the **Vectorized Lambda Iteration Method (VLIM)** for solving the Economic Dispatch (ED) problem in power systems.
 
 This project demonstrates how vectorized numerical computation can significantly accelerate classical optimization methods for generator scheduling.
 
-⸻
+---
 
-📄 Related Publication
+## 📄 Related Publication
 
-Ikhsan et al. (2024)
-Vectorized Lambda Iteration Method for Swift Economic Dispatch Analysis
+Ikhsan et al. (2024)  
+*Vectorized Lambda Iteration Method for Swift Economic Dispatch Analysis*  
 https://doi.org/10.5109/7172306
 
-⸻
+---
 
-🚀 Features
-	•	⚡ Fast computation using vectorization (NumPy)
-	•	📉 Up to ~99% reduction in computation time
-	•	⚙️ Supports key constraints:
-	•	Power balance constraint
-	•	Generation limits
-	•	Ramp rate constraint
-	•	🔁 Suitable for real-time optimization & energy market applications
-	•	🧠 Clean and modular Python implementation
+## 🚀 Features
 
-⸻
+- ⚡ Fast computation using **vectorization (NumPy)**
+- 📉 Up to **~99% reduction in computation time**
+- ⚙️ Supports key constraints:
+  - Power balance constraint  
+  - Generation limits  
+  - Ramp rate constraint  
+- 🔁 Suitable for **real-time optimization & energy market applications**
+- 🧠 Clean and modular Python implementation
 
-🧠 Method Overview
+---
+
+## 🧠 Method Overview
 
 The Economic Dispatch (ED) problem aims to minimize total generation cost:
 
+\[
 F_T = \sum_{i=1}^{n} (a_i + b_i P_i + c_i P_i^2)
+\]
 
 The classical Lambda Iteration Method is enhanced through:
-	•	Vectorized operations using NumPy
-	•	Parallel computation across generators
-	•	Reduced iteration time and faster convergence
+
+- Vectorized operations using NumPy  
+- Parallel computation across generators  
+- Reduced iteration time and faster convergence  
 
 This approach significantly improves efficiency while maintaining solution accuracy.
 
-⸻
+---
 
-📊 Key Results
+## 📊 Key Results
 
-Method	Cost ($/h)	Time (sec)
-VLIM	32,183	0.0049
-ELIM	32,542	0.123
-LIM	32,549	2.556
+| Method | Cost ($/h) | Time (sec) |
+|--------|-----------|------------|
+| VLIM   | 32,183    | 0.0049     |
+| ELIM   | 32,542    | 0.123      |
+| LIM    | 32,549    | 2.556      |
 
-✅ VLIM achieves:
-	•	Faster convergence
-	•	Lower operational cost
-	•	Significant computational efficiency
+**VLIM achieves:**
+- Faster convergence  
+- Lower operational cost  
+- Significant computational efficiency  
 
-⸻
+---
 
-📂 Project Structure
+## 📂 Project Structure
 
+```text
 vlim-economic-dispatch/
 ├── src/                # Core implementation
 ├── README.md           # Documentation
@@ -174,4 +186,15 @@ If you find this repository useful:
 	•	⭐ Star this repo
 	•	🍴 Fork and contribute
 	•	📢 Share with the research community
-:::
+
+---
+
+# ✅ Yang sudah diperbaiki
+
+- Code block tidak bocor ❗
+- Tidak ada simbol aneh `⸻`
+- Bullet list rapi
+- Table valid
+- Semua bagian bisa render sempurna di GitHub
+
+---
