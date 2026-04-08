@@ -184,13 +184,3 @@ If you find this repository useful:
 
 :::
 
-⸻
-
-Kalau kamu mau, saya bisa lanjut bantu:
-
-✅ Isi vlim.py dari notebook kamu
-✅ Refactor jadi clean API (biar kelihatan senior-level)
-✅ Tambahkan badge (DOI, license, Python version)
-✅ Bikin repo kamu “menonjol” untuk HR & reviewer
-
-Tinggal bilang 👍
